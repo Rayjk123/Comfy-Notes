@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE3D6BC61E71D452002DFB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6BC51E71D452002DFB90 /* AppDelegate.swift */; };
+		DE3D6BC81E71D452002DFB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6BC71E71D452002DFB90 /* ViewController.swift */; };
+		DE3D6BCB1E71D452002DFB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BC91E71D452002DFB90 /* Main.storyboard */; };
+		DE3D6BCD1E71D452002DFB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BCC1E71D452002DFB90 /* Assets.xcassets */; };
+		DE3D6BD01E71D452002DFB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BCE1E71D452002DFB90 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE3D6BC21E71D452002DFB90 /* Comfy-Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Comfy-Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3D6BC51E71D452002DFB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE3D6BC71E71D452002DFB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE3D6BCA1E71D452002DFB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE3D6BCC1E71D452002DFB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE3D6BCF1E71D452002DFB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE3D6BD11E71D452002DFB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE3D6BBF1E71D452002DFB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE3D6BB91E71D451002DFB90 = {
+			isa = PBXGroup;
+			children = (
+				DE3D6BC41E71D452002DFB90 /* Comfy-Notes */,
+				DE3D6BC31E71D452002DFB90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE3D6BC31E71D452002DFB90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D6BC21E71D452002DFB90 /* Comfy-Notes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE3D6BC41E71D452002DFB90 /* Comfy-Notes */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D6BC51E71D452002DFB90 /* AppDelegate.swift */,
+				DE3D6BC71E71D452002DFB90 /* ViewController.swift */,
+				DE3D6BC91E71D452002DFB90 /* Main.storyboard */,
+				DE3D6BCC1E71D452002DFB90 /* Assets.xcassets */,
+				DE3D6BCE1E71D452002DFB90 /* LaunchScreen.storyboard */,
+				DE3D6BD11E71D452002DFB90 /* Info.plist */,
+			);
+			path = "Comfy-Notes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE3D6BC11E71D452002DFB90 /* Comfy-Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE3D6BD41E71D452002DFB90 /* Build configuration list for PBXNativeTarget "Comfy-Notes" */;
+			buildPhases = (
+				DE3D6BBE1E71D452002DFB90 /* Sources */,
+				DE3D6BBF1E71D452002DFB90 /* Frameworks */,
+				DE3D6BC01E71D452002DFB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Comfy-Notes";
+			productName = "Comfy-Notes";
+			productReference = DE3D6BC21E71D452002DFB90 /* Comfy-Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE3D6BBA1E71D451002DFB90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Panda Life";
+				TargetAttributes = {
+					DE3D6BC11E71D452002DFB90 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2GBQ7B7WXX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE3D6BBD1E71D452002DFB90 /* Build configuration list for PBXProject "Comfy-Notes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE3D6BB91E71D451002DFB90;
+			productRefGroup = DE3D6BC31E71D452002DFB90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE3D6BC11E71D452002DFB90 /* Comfy-Notes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE3D6BC01E71D452002DFB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3D6BD01E71D452002DFB90 /* LaunchScreen.storyboard in Resources */,
+				DE3D6BCD1E71D452002DFB90 /* Assets.xcassets in Resources */,
+				DE3D6BCB1E71D452002DFB90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE3D6BBE1E71D452002DFB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3D6BC81E71D452002DFB90 /* ViewController.swift in Sources */,
+				DE3D6BC61E71D452002DFB90 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE3D6BC91E71D452002DFB90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE3D6BCA1E71D452002DFB90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE3D6BCE1E71D452002DFB90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE3D6BCF1E71D452002DFB90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE3D6BD21E71D452002DFB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE3D6BD31E71D452002DFB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE3D6BD51E71D452002DFB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GBQ7B7WXX;
+				INFOPLIST_FILE = "Comfy-Notes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panda-Life.Comfy-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE3D6BD61E71D452002DFB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GBQ7B7WXX;
+				INFOPLIST_FILE = "Comfy-Notes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panda-Life.Comfy-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE3D6BBD1E71D452002DFB90 /* Build configuration list for PBXProject "Comfy-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE3D6BD21E71D452002DFB90 /* Debug */,
+				DE3D6BD31E71D452002DFB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE3D6BD41E71D452002DFB90 /* Build configuration list for PBXNativeTarget "Comfy-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE3D6BD51E71D452002DFB90 /* Debug */,
+				DE3D6BD61E71D452002DFB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE3D6BBA1E71D451002DFB90 /* Project object */;
+}
