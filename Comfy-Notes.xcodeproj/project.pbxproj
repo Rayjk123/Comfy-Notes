@@ -15,6 +15,11 @@
 		DE3D6BD01E71D452002DFB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BCE1E71D452002DFB90 /* LaunchScreen.storyboard */; };
 		DE3D6BD81E71F331002DFB90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BD71E71F331002DFB90 /* GoogleService-Info.plist */; };
 		DE3D6BDA1E71F7BD002DFB90 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6BD91E71F7BD002DFB90 /* EditorViewController.swift */; };
+		DE3D6BF51E726F09002DFB90 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF01E726F09002DFB90 /* OpenSans-Bold.ttf */; };
+		DE3D6BF61E726F09002DFB90 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF11E726F09002DFB90 /* OpenSans-Italic.ttf */; };
+		DE3D6BF71E726F09002DFB90 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF21E726F09002DFB90 /* OpenSans-Light.ttf */; };
+		DE3D6BF81E726F09002DFB90 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF31E726F09002DFB90 /* OpenSans-Regular.ttf */; };
+		DE3D6BF91E726F09002DFB90 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF41E726F09002DFB90 /* OpenSans-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		DE3D6BD11E71D452002DFB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3D6BD71E71F331002DFB90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE3D6BD91E71F7BD002DFB90 /* EditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		DE3D6BF01E726F09002DFB90 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DE3D6BF11E726F09002DFB90 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		DE3D6BF21E726F09002DFB90 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		DE3D6BF31E726F09002DFB90 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DE3D6BF41E726F09002DFB90 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		FF5EA4B99B453145278596A6 /* Pods_Comfy_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comfy_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,12 +96,25 @@
 				DE3D6BC71E71D452002DFB90 /* NotesViewController.swift */,
 				DE3D6BD91E71F7BD002DFB90 /* EditorViewController.swift */,
 				DE3D6BC91E71D452002DFB90 /* Main.storyboard */,
+				DE3D6BEF1E726522002DFB90 /* Fonts */,
 				DE3D6BCC1E71D452002DFB90 /* Assets.xcassets */,
 				DE3D6BCE1E71D452002DFB90 /* LaunchScreen.storyboard */,
 				DE3D6BD11E71D452002DFB90 /* Info.plist */,
 				DE3D6BD71E71F331002DFB90 /* GoogleService-Info.plist */,
 			);
 			path = "Comfy-Notes";
+			sourceTree = "<group>";
+		};
+		DE3D6BEF1E726522002DFB90 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D6BF01E726F09002DFB90 /* OpenSans-Bold.ttf */,
+				DE3D6BF11E726F09002DFB90 /* OpenSans-Italic.ttf */,
+				DE3D6BF21E726F09002DFB90 /* OpenSans-Light.ttf */,
+				DE3D6BF31E726F09002DFB90 /* OpenSans-Regular.ttf */,
+				DE3D6BF41E726F09002DFB90 /* OpenSans-Semibold.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +182,12 @@
 			files = (
 				DE3D6BD01E71D452002DFB90 /* LaunchScreen.storyboard in Resources */,
 				DE3D6BD81E71F331002DFB90 /* GoogleService-Info.plist in Resources */,
+				DE3D6BF71E726F09002DFB90 /* OpenSans-Light.ttf in Resources */,
+				DE3D6BF91E726F09002DFB90 /* OpenSans-Semibold.ttf in Resources */,
 				DE3D6BCD1E71D452002DFB90 /* Assets.xcassets in Resources */,
+				DE3D6BF61E726F09002DFB90 /* OpenSans-Italic.ttf in Resources */,
+				DE3D6BF51E726F09002DFB90 /* OpenSans-Bold.ttf in Resources */,
+				DE3D6BF81E726F09002DFB90 /* OpenSans-Regular.ttf in Resources */,
 				DE3D6BCB1E71D452002DFB90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
         let root = NotesViewController()
-        nav.viewControllers = [root]
+        let editor = EditorViewController()
+        nav.viewControllers = [editor]
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         FIRApp.configure()
+        print(UIFont.familyNames)
         
         return true
     }
