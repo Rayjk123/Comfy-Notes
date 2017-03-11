@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    private lazy var notesRef: FIRDatabaseReference = FIRDatabase.database().reference(withPath: "Notes")
     
     var tableview : UITableView = UITableView()
     

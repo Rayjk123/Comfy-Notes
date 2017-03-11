@@ -19,11 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
+        nav.navigationBar.barTintColor = UIColor.red
         let root = NotesViewController()
-        nav.viewControllers = [root]
+        let editor = EditorViewController()
+        nav.viewControllers = [editor]
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         FIRApp.configure()
+        //To print our font families.
+        //print(UIFont.familyNames)
         
         return true
     }
