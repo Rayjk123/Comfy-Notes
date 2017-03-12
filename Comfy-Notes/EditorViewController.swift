@@ -22,7 +22,7 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         return view
     }()
     
-    
+     
     override func viewDidLoad(){
         super.viewDidLoad()
         //This stops content from going behind the navigation bar at the top.
@@ -149,7 +149,7 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     }
     
     
-        
+    
     
     
     
