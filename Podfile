@@ -6,6 +6,7 @@ target 'Comfy-Notes' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'IQKeyboardManagerSwift'
   use_frameworks!
 
   # Pods for Comfy-Notes
