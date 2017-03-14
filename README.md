@@ -1,3 +1,8 @@
 # Comfy-Notes
 A note taking app in progress
-Started 03/09/17
+
+Lol almost lost my files for some reason
+
+So I'm making a backup on Git
+
+This is for date 03/11/17
