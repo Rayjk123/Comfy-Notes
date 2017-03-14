@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,18 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationController()
         nav.navigationBar.barTintColor = UIColor.red
         let root = NotesViewController()
-        let editor = EditorViewController()
+        let editor = Editor2ViewController()
         nav.viewControllers = [editor]
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         FIRApp.configure()
-        //To print our font families.
-        //print(UIFont.familyNames)
-        IQKeyboardManager.sharedManager().enable = true
-        IQKeyboardManager.sharedManager().enableAutoToolbar = false
-        IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = false
-        IQKeyboardManager.sharedManager().shouldHidePreviousNext = false
-        //IQKeyboardManager.sharedManager().can
         
         return true
     }
