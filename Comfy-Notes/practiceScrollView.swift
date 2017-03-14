@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate{
+class Editor2ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate{
     
     var noteInfo: UITextView = UITextView()
     var mainView: UIScrollView = UIScrollView()
@@ -26,6 +26,8 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardShown), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardHidden), name: .UIKeyboardWillHide, object: nil)
         
         //This stops content from going behind the navigation bar at the top.
         edgesForExtendedLayout = []
@@ -41,7 +43,6 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         NotificationCenter.default.removeObserver(self)
     }
     
-    
     //sets up the navigation bar. Called in setupBasic
     func setupNavigationBar(){
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(finishNote))
@@ -50,8 +51,6 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         titleTextField.textAlignment = .center
         titleTextField.placeholder = "Title"
         self.navigationItem.titleView = titleTextField
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide), name: .UIKeyboardWillHide, object: nil)
     }
     
     
@@ -59,6 +58,7 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     //Set up the beginning stuff stuch as navigation and notification.
     func setupBasicView(){
         mainView.backgroundColor = UIColor.white
+        mainView.isScrollEnabled = true
         mainView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(mainView)
         
@@ -72,11 +72,11 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         mainView.addSubview(containerView)
         
         containerView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor).isActive = true
-        containerView.topAnchor.constraint(equalTo: mainView.topAnchor).isActive = true
+        containerView.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 10).isActive = true
         containerView.rightAnchor.constraint(equalTo: mainView.rightAnchor).isActive = true
         containerView.leftAnchor.constraint(equalTo: mainView.leftAnchor).isActive = true
         containerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-        containerView.heightAnchor.constraint(equalToConstant: 500).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height - 70).isActive = true
     }
     
     func setupView(){
@@ -86,8 +86,8 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         noteInfo.textColor = UIColor.lightGray
         noteInfo.font = UIFont(name: "Open Sans", size: 15)
         noteInfo.translatesAutoresizingMaskIntoConstraints = false
-        noteInfo.becomeFirstResponder()
         mainView.addSubview(noteInfo)
+        noteInfo.becomeFirstResponder()
         
         //Set up bottom view
         bottomBarView.translatesAutoresizingMaskIntoConstraints = false
@@ -141,7 +141,6 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         print("Hello")
     }
     
-    
     func keyboardShown(notification: NSNotification){
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             let keyboardHeight = keyboardSize.height
@@ -165,10 +164,12 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         }
     }
     
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
         if(textView.text == "Start writing..."){
             textView.text = ""
             textView.textColor = UIColor.black
+            print("text View Begin Editing2")
         }
     }
     
@@ -190,26 +191,6 @@ class EditorViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     func changeFont(){
         
     }
-    
-    func keyboardDidShow(notification: Notification){
-        print("keyboard did show")
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        let keyboardHeight: CGFloat = keyboardFrame.height
-        
-        self.noteInfo.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -keyboardHeight)
-        //self.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -(keyboardFrame.size.height + 20))
-        
-    }
-    
-    func keyboardDidHide(){
-        print("keyboard did hide")
-    }
-    
-
-    
-    
-    
     
     
     
