@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         FIRApp.configure()
         
+        print(UIFont.familyNames)
         return true
     }
 

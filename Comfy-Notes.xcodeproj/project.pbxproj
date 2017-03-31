@@ -21,6 +21,7 @@
 		DE3D6BF81E726F09002DFB90 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF31E726F09002DFB90 /* OpenSans-Regular.ttf */; };
 		DE3D6BF91E726F09002DFB90 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6BF41E726F09002DFB90 /* OpenSans-Semibold.ttf */; };
 		DE3D6BFB1E7271AC002DFB90 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6BFA1E7271AC002DFB90 /* UIColorExtension.swift */; };
+		DED1705E1E8468C20041A756 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1705D1E8468C20041A756 /* EditorView.swift */; };
 		DEEC594E1E77309B00D25453 /* practiceScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC594D1E77309B00D25453 /* practiceScrollView.swift */; };
 		DEEC59501E77676100D25453 /* oldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC594F1E77676100D25453 /* oldEditor.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		DE3D6BF31E726F09002DFB90 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DE3D6BF41E726F09002DFB90 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		DE3D6BFA1E7271AC002DFB90 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DED1705D1E8468C20041A756 /* EditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		DEEC594D1E77309B00D25453 /* practiceScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = practiceScrollView.swift; sourceTree = "<group>"; };
 		DEEC594F1E77676100D25453 /* oldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = oldEditor.swift; sourceTree = "<group>"; };
 		FF5EA4B99B453145278596A6 /* Pods_Comfy_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comfy_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 				DE3D6BC71E71D452002DFB90 /* NotesViewController.swift */,
 				DE3D6BD91E71F7BD002DFB90 /* EditorViewController.swift */,
 				DEEC594D1E77309B00D25453 /* practiceScrollView.swift */,
+				DED1705D1E8468C20041A756 /* EditorView.swift */,
 				DEEC594F1E77676100D25453 /* oldEditor.swift */,
 				DE3D6BC91E71D452002DFB90 /* Main.storyboard */,
 				DE3D6BEF1E726522002DFB90 /* Fonts */,
@@ -259,6 +262,7 @@
 				DE3D6BC81E71D452002DFB90 /* NotesViewController.swift in Sources */,
 				DE3D6BC61E71D452002DFB90 /* AppDelegate.swift in Sources */,
 				DEEC59501E77676100D25453 /* oldEditor.swift in Sources */,
+				DED1705E1E8468C20041A756 /* EditorView.swift in Sources */,
 				DEEC594E1E77309B00D25453 /* practiceScrollView.swift in Sources */,
 				DE3D6BDA1E71F7BD002DFB90 /* EditorViewController.swift in Sources */,
 				DE3D6BFB1E7271AC002DFB90 /* UIColorExtension.swift in Sources */,
